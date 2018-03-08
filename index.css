@@ -5,36 +5,41 @@ html, body {
 
 header {
     display: flex;
-    flex-flow: right nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 5px;
     border: 2px inset lightslategray;
+    height: 18em;
 }
 
 .wrapper {
-    margin: 0 auto;
+/* Don't add a margin "0 auto", you stupid slut */
 }
 
 nav {
     background-color: #c7d1e0;
     margin: 4px 0px;
-    position: static;
-    right: 40px;
     opacity: 0.9;
     border: 3px ridge black;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(46, 14, 88)
+}
+
+h4 {
+    margin: 0;
+}
+
 #topBar {
-    float: right;
     margin: 0px;
     padding: 0px;
     font-size: 0.7em;
-    min-width: 434px;
-    min-height: 6px;
     order: 1;
 }
-/* topBar add pictures for links, change style of font, interact on hover, get rid of space on left */
+/* topBar add pictures for links, change style of font, interact on hover, murder the space on left */
 
 nav ul {
     margin: 4px;
@@ -49,42 +54,30 @@ nav li {
 #siteBanner {
     background: black url("assets/crookedStarlingEdit3.jpg") no-repeat;
     background-size: contain;
-    height: 7.1em;
-    width: 55%;
+    height: 7.5em;
+    width: 31.5em;
     max-width: 663px;
     max-height: 166px;
-    float: right;
-    position: relative;
-    top: 10%;
-    margin: 8px 80px 10px 10px;
     font-size: 1.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px 25px;
-    line-height: 30px;
-    vertical-align: bottom;
     border: 5px ridge black;
     order: 2;
 }
 /* SiteBanner to resize with image, stay to the right (rs) */
 
 #siteNav {
-    position: relative;
     height: 2em;
-    width: 22em;
-    max-width: 800px;
-    float: right;
-    margin: 0px 5px;
+    width: 30em;
+    text-align: center;
     font-size: 0.75em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px ridge black;
     font-weight: bold;
-    min-width: 380px;
     order: 3;
 }
-/* siteNav to interact on hover, change style of font, stay aligned on right of screen (rs) */
+/* siteNav to interact on hover, change style of font, WHY IS THERE A SPACE ON THE LEFT??!, stay aligned on right of screen (rs) */
 
 #coupon {
     order: 4;
     color: lightslategray;
-    float: left;
 }
