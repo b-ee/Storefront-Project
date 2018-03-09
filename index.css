@@ -16,9 +16,9 @@ html, body {
         "coupon coupon";
     justify-items: end;
     align-items: center;
-    grid-row-gap: 5px;
+    grid-gap: 5px;
     padding: 12px;
-    border: 4px ridge rgb(41, 13, 68);
+    /* border: 4px ridge rgb(41, 13, 68); */
 } 
 
 nav {
@@ -86,24 +86,148 @@ nav li {
     grid-template-columns: auto;
     grid-template-areas:
         "featuredProducts"
-        "scrollingProducts"
+        "scrollingBrowse"
         "searchFeature";
     justify-items: center;
     align-items: center;
-    grid-row-gap: 0.8em;
+    grid-gap: 0.8em;
     padding: 12px;
-    border: 4px ridge rgb(41, 13, 68);
-    height: 35em;
+    /* border: 4px ridge rgb(41, 13, 68); */
+    height: 40em;
+    margin: 10px 0px;
 }
 
 #scrollingFeatures {
     font-size: 1.2em;
     color: lightslategray;
     text-align: center;
+    grid-area: featuredProducts;
+    border: 1px ridge white;
+    width: 100%;
+    height: 100%;
+}
+
+#scrollingFeatures h2 {
+    text-decoration: underline;
 }
 
 #scrollingBrowse {
     font-size: 0.9em;
     color: lightslategray;
     text-align: center;
+    grid-area: scrollingBrowse;
+    border: 1px ridge white;
+    width: 100%;
+    height: 100%;
+}
+
+#scrollingBrowse h2 {
+    text-decoration: underline;
+}
+
+#searchFeature {
+    grid-area: searchFeature;
+    font-size: 0.9em;
+    color: lightslategray;
+    text-align: center;
+    border: 1px ridge white;
+    width: 100%;
+    height: 100%;
+}
+
+#wrapperBottomFeat {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "SotD testimonial"
+        "SotD orphans"
+        "SotD browseBySchool";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 1.2em;
+    padding: 12px;
+    border: 4px ridge rgb(41, 13, 68);
+    width: 85%;
+    padding: 15px;
+    margin: 10px 7.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#SotD {
+    grid-area: SotD;
+    text-align: center;
+    padding: 10px 40px 20px 40px;
+    border: 9px ridge rgb(40, 8, 61);
+    color: rgb(40, 8, 61);
+    background-color: rgb(124, 91, 18);
+    font-weight: bold;
+}
+
+#SotD h1 {
+    text-decoration: underline;
+    font-size: 2.3em;
+}
+
+#SotD h2 {
+    font-style: italic;
+}
+
+#SotD p {
+    font-size: 1.3em;
+}
+
+#testimonial {
+    grid-area: testimonial;
+    border: 9px ridge rgb(40, 8, 61);
+    height: 95%;
+    width: 95%;
+    background-color: rgb(124, 91, 18);
+    color: rgb(40, 8, 61);
+    font-style: italic;
+    display: inline-block;
+    font-size: 1.15em;
+    object-fit: contain;
+}
+
+#testimonial img {
+    max-height: 90%;
+    max-width: 90%;
+    float: left;
+    padding: 10px 40px 0 10px;
+}
+
+#testimonial p {
+    margin: 10px 40px;
+    object-fit: contain;
+    font-size: 0.8em;
+}
+
+#testimonial h1 {
+    font-style: none;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.3em;
+    margin: 0.5em;
+}
+
+#orphans {
+    grid-area: orphans;
+    border: 9px ridge rgb(40, 8, 61);
+    height: 95%;
+    width: 95%;
+    background-color: rgb(124, 91, 18);
+    color: rgb(40, 8, 61);
+}
+
+#orphans p {
+    margin: 0.3em;
+    padding: 0.3em
+}
+
+#orphans h1 {
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: bold;
 }
