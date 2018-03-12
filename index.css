@@ -231,3 +231,29 @@ nav li {
     text-decoration: underline;
     font-weight: bold;
 }
+
+#browseBySchool {
+    grid-area: browseBySchool;
+    border: 9px ridge rgb(40, 8, 61);
+    height: 95%;
+    width: 95%;
+    background-color: rgb(124, 91, 18);
+    color: rgb(40, 8, 61);
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "Account"
+        "Information"
+        "Partners";
+    grid-gap: 1em;
+    border: 4px ridge rgb(41, 13, 68);
+    background-color: rgb(124, 91, 18);
+    color: rgb(40, 8, 61);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
