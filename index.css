@@ -3,6 +3,8 @@ html, body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%2367469d' fill-opacity='0.42'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
     max-width: 2000px;
     margin: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 #wrapperTop {
@@ -161,7 +163,7 @@ nav li {
     padding: 10px 40px 20px 40px;
     border: 9px ridge rgb(40, 8, 61);
     color: rgb(40, 8, 61);
-    background-color: rgb(124, 91, 18);
+    background-color: rgba(124, 91, 18, 0.85);
     font-weight: bold;
 }
 
@@ -183,7 +185,7 @@ nav li {
     border: 9px ridge rgb(40, 8, 61);
     height: 95%;
     width: 95%;
-    background-color: rgb(124, 91, 18);
+    background-color: rgba(124, 91, 18, 0.85);
     color: rgb(40, 8, 61);
     font-style: italic;
     display: inline-block;
@@ -217,7 +219,7 @@ nav li {
     border: 9px ridge rgb(40, 8, 61);
     height: 95%;
     width: 95%;
-    background-color: rgb(124, 91, 18);
+    background-color: rgba(124, 91, 18, 0.85);
     color: rgb(40, 8, 61);
 }
 
@@ -237,7 +239,7 @@ nav li {
     border: 9px ridge rgb(40, 8, 61);
     height: 95%;
     width: 95%;
-    background-color: rgb(124, 91, 18);
+    background-color: rgba(124, 91, 18, 0.85);
     color: rgb(40, 8, 61);
     text-align: center;
 }
@@ -252,8 +254,9 @@ footer {
         "Partners";
     grid-gap: 1em;
     border: 4px ridge rgb(41, 13, 68);
-    background-color: rgb(124, 91, 18);
+    background-color: rgba(124, 91, 18, 0.85);
     color: rgb(40, 8, 61);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 0.8em;
 }
