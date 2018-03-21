@@ -83,22 +83,22 @@ nav li {
 
 #wrapperTopFeat {
     display: grid;
-    grid-template-rows: 4fr 3fr 1fr;
+    /* grid-template-rows: 4fr 3fr 1fr;
     grid-template-areas:
         "featuredProducts"
         "scrollingBrowse"
-        "searchFeature";
+        "searchFeature"; */
     justify-items: center;
     align-items: center;
     grid-gap: 0.8em;
     padding: 12px;
     /* border: 4px ridge rgb(41, 13, 68); */
-    height: 90em;
-    margin: 10px 0px;
+    /* height: 90em; */
+    margin: 0px 0px;
     position: relative;
 }
 
-#scrollingFeatures {
+/* #scrollingFeatures {
     font-size: 1.2em;
     color: lightslategray;
     text-align: center;
@@ -110,7 +110,7 @@ nav li {
 
 #scrollingFeatures h2 {
     text-decoration: underline;
-}
+} */
 
 #scrollingBrowse {
     display: grid;
@@ -239,7 +239,8 @@ nav li {
 
 #orphans p {
     margin: 0.3em;
-    padding: 0.3em
+    padding: 0.3em;
+    font-weight: bold;
 }
 
 #orphans h1 {
