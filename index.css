@@ -44,6 +44,7 @@ h4 {
     padding: 0px;
     font-size: 0.8em;
     grid-area: topBar;
+    font-style: italic;
 }
 
 nav ul {
@@ -121,7 +122,6 @@ nav li {
     grid-area: scrollingBrowse;
     width: 80%;
     height: 30em;
-    min-height: 30em;
     align-items: center;
     object-fit: contain;
 }
@@ -136,8 +136,8 @@ nav li {
 }
 
 .category img {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     border: 1px solid black;
 }
 
